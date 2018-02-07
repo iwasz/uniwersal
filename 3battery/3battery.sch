@@ -47,17 +47,6 @@ F 3 "" H 1600 3800 50  0001 C CNN
 	1    1600 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5A673EA2
-P 1600 4150
-F 0 "#PWR01" H 1600 3900 50  0001 C CNN
-F 1 "GND" H 1605 3977 50  0000 C CNN
-F 2 "" H 1600 4150 50  0001 C CNN
-F 3 "" H 1600 4150 50  0001 C CNN
-	1    1600 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 3050 1200 2925
 Wire Wire Line
@@ -73,20 +62,9 @@ P 5050 3100
 F 0 "U1" H 5050 2464 50  0000 C CNN
 F 1 "bq24133" H 5050 2373 50  0000 C CNN
 F 2 "iwasz:R-PVQFN-N24" H 5100 3100 50  0001 C CNN
-F 3 "" H 5100 3100 50  0001 C CNN
+F 3 "http://pl.farnell.com/texas-instruments/bq24133rgyt/batt-charger-li-ion-pol-2-5a-vqfn/dp/2492091" H 5100 3100 50  0001 C CNN
 	1    5050 3100
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5A6785D7
-P 5050 2100
-F 0 "#PWR03" H 5050 1850 50  0001 C CNN
-F 1 "GND" H 5055 1927 50  0000 C CNN
-F 2 "" H 5050 2100 50  0001 C CNN
-F 3 "" H 5050 2100 50  0001 C CNN
-	1    5050 2100
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5050 2100 5050 2150
@@ -1923,6 +1901,37 @@ Wire Wire Line
 Wire Wire Line
 	850  6875 900  6875
 Connection ~ 850  6575
-Wire Wire Line
-	6175 6900 6275 6900
+$Comp
+L power:GNDD #PWR01
+U 1 1 5A7F1CC5
+P 1600 4150
+F 0 "#PWR01" H 1600 3900 50  0001 C CNN
+F 1 "GNDD" H 1604 3995 50  0000 C CNN
+F 2 "" H 1600 4150 50  0001 C CNN
+F 3 "" H 1600 4150 50  0001 C CNN
+	1    1600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5A7C429F
+P 6275 7100
+F 0 "J11" H 6355 7092 50  0000 L CNN
+F 1 "opt" H 6125 6900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6275 7100 50  0001 C CNN
+F 3 "~" H 6275 7100 50  0001 C CNN
+	1    6275 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR03
+U 1 1 5A7C6993
+P 5050 2100
+F 0 "#PWR03" H 5050 1850 50  0001 C CNN
+F 1 "GNDD" V 5150 2050 50  0000 R CNN
+F 2 "" H 5050 2100 50  0001 C CNN
+F 3 "" H 5050 2100 50  0001 C CNN
+	1    5050 2100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

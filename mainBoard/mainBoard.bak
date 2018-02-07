@@ -1534,7 +1534,7 @@ pb14
 Text Label 7925 4850 0    50   ~ 0
 pb15
 Text Label 7925 4750 0    50   ~ 0
-pb8
+pd8
 Text Label 7925 4650 0    50   ~ 0
 pd9
 Text Label 7925 4550 0    50   ~ 0
@@ -1684,7 +1684,7 @@ pb14
 Text Label 2150 5375 0    50   ~ 0
 pb15
 Text Label 1650 5275 2    50   ~ 0
-pb8
+pd8
 Text Label 2150 5275 0    50   ~ 0
 pd9
 Text Label 1650 5175 2    50   ~ 0

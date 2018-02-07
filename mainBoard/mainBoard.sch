@@ -21,7 +21,7 @@ P 6225 3950
 F 0 "U1" H 6175 4000 50  0000 L CNN
 F 1 "STM32F407VGTx" H 5925 3900 50  0000 L CNN
 F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 6225 3950 50  0001 C CNN
-F 3 "" H 6225 3950 50  0001 C CNN
+F 3 "http://pl.farnell.com/stmicroelectronics/stm32f407vgt6/mcu-32bit-cortex-m4-168mhz-lqfp/dp/2064368?st=stm32f407vgt" H 6225 3950 50  0001 C CNN
 	1    6225 3950
 	1    0    0    -1  
 $EndComp
@@ -1053,7 +1053,7 @@ P 9450 3875
 F 0 "U2" H 9400 3750 60  0000 L CNN
 F 1 "SMF05C / MMQA5V6T3G" V 9125 3050 60  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 9450 3875 60  0001 C CNN
-F 3 "" H 9450 3875 60  0000 C CNN
+F 3 "http://pl.farnell.com/on-semiconductor/mmqa5v6t1g/diode-tvs-uni-5-6v-sc-74/dp/1459113?st=mmqa5v6" H 9450 3875 60  0000 C CNN
 	1    9450 3875
 	1    0    0    -1  
 $EndComp
@@ -1272,7 +1272,7 @@ P 9925 3650
 F 0 "D2" V 9971 3571 50  0000 R CNN
 F 1 "BAT60JFILM" V 9880 3571 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323" H 9925 3650 50  0001 C CNN
-F 3 "" H 9925 3650 50  0001 C CNN
+F 3 "http://pl.farnell.com/stmicroelectronics/bat60jfilm/diode-schottky-3a-10v-smd/dp/1467544?st=BAT60JFILM" H 9925 3650 50  0001 C CNN
 	1    9925 3650
 	0    -1   -1   0   
 $EndComp
