@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x07
+# Connector_Generic_Conn_01x07
 #
-DEF Connector_Generic:Conn_01x07 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x07 J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "Connector_Generic:Conn_01x07" 0 -400 50 H V C CNN
+F1 "Connector_Generic_Conn_01x07" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -30,15 +30,15 @@ X Pin_7 7 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- C_*
+ *:C_*
 $ENDFPLIST
 DRAW
 P 2 0 1 20 -80 -30 80 -30 N
@@ -48,11 +48,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Crystal
+# Device_Crystal
 #
-DEF Device:Crystal Y 0 40 N N 1 F N
+DEF Device_Crystal Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "Device:Crystal" 0 -150 50 H V C CNN
+F1 "Device_Crystal" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -69,11 +69,11 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D_Schottky
+# Device_D_Schottky
 #
-DEF Device:D_Schottky D 0 40 N N 1 F N
+DEF Device_D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D_Schottky" 0 -100 50 H V C CNN
+F1 "Device_D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -81,7 +81,7 @@ $FPLIST
  *SingleDiode
  *_Diode_*
  *SingleDiode*
- D_*
+ *:D_*
 $ENDFPLIST
 DRAW
 P 2 0 1 0 50 0 -50 0 N
@@ -92,15 +92,17 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 Y N 1 F N
+DEF Device_LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  LED*
+ LED_SMD:*
+ LED_THT:*
 $ENDFPLIST
 DRAW
 P 2 0 1 8 -50 -50 -50 50 N
@@ -113,16 +115,15 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
- R_*
+ *:R_*
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
@@ -131,11 +132,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper:SolderJumper_2_Open
+# Jumper_SolderJumper_2_Open
 #
-DEF Jumper:SolderJumper_2_Open JP 0 0 Y N 1 F N
+DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper:SolderJumper_2_Open" 0 -100 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -153,11 +154,11 @@ X B 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear:MIC5504-3.3YM5
+# Regulator_Linear_MIC5504-3.3YM5
 #
-DEF Regulator_Linear:MIC5504-3.3YM5 U 0 20 Y Y 1 F N
+DEF Regulator_Linear_MIC5504-3.3YM5 U 0 20 Y Y 1 F N
 F0 "U" -300 350 50 H V L CNN
-F1 "Regulator_Linear:MIC5504-3.3YM5" -300 250 50 H V L CNN
+F1 "Regulator_Linear_MIC5504-3.3YM5" -300 250 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-5" 0 -400 50 H I C CNN
 F3 "" -250 250 50 H I C CNN
 ALIAS MIC5504-2.8YM5 MIC5504-2.5YM5 MIC5504-1.8YM5 MIC5504-1.2YM5 MIC5501-3.0YM5
@@ -174,11 +175,11 @@ X VOUT 5 400 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# Switch:SW_Push
+# Switch_SW_Push
 #
-DEF Switch:SW_Push SW 0 40 N N 1 F N
+DEF Switch_SW_Push SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "Switch:SW_Push" 0 -60 50 H V C CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -191,11 +192,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# iwasz-kicad:SMF05C
+# iwasz-kicad_SMF05C
 #
-DEF iwasz-kicad:SMF05C U 0 40 Y Y 1 F N
+DEF iwasz-kicad_SMF05C U 0 40 Y Y 1 F N
 F0 "U" 0 -100 60 H V C CNN
-F1 "iwasz-kicad:SMF05C" 0 0 60 H V C CNN
+F1 "iwasz-kicad_SMF05C" 0 0 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -212,11 +213,11 @@ X ~ 6 200 300 200 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# iwasz-kicad:STM32F407VGTx
+# iwasz-kicad_STM32F407VGTx
 #
-DEF iwasz-kicad:STM32F407VGTx U 0 40 Y Y 1 F N
+DEF iwasz-kicad_STM32F407VGTx U 0 40 Y Y 1 F N
 F0 "U" 0 50 50 H V C CNN
-F1 "iwasz-kicad:STM32F407VGTx" 0 -50 50 H V C CNN
+F1 "iwasz-kicad_STM32F407VGTx" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -324,11 +325,11 @@ X VSS 99 -1100 1800 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# iwasz-kicad:uniwersal-board2
+# iwasz-kicad_uniwersal-board2
 #
-DEF iwasz-kicad:uniwersal-board2 J 0 40 Y N 1 F N
+DEF iwasz-kicad_uniwersal-board2 J 0 40 Y N 1 F N
 F0 "J" -550 1350 50 H V C CNN
-F1 "iwasz-kicad:uniwersal-board2" -550 -1250 50 H V C CNN
+F1 "iwasz-kicad_uniwersal-board2" -550 -1250 50 H V C CNN
 F2 "" -600 50 50 H I C CNN
 F3 "" -600 50 50 H I C CNN
 $FPLIST
@@ -546,11 +547,11 @@ X Pin_29 99 150 -1300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# iwasz-kicad:usb-micro
+# iwasz-kicad_usb-micro
 #
-DEF iwasz-kicad:usb-micro U 0 40 Y Y 1 F N
+DEF iwasz-kicad_usb-micro U 0 40 Y Y 1 F N
 F0 "U" 50 -100 60 H V C CNN
-F1 "iwasz-kicad:usb-micro" 50 0 60 H V C CNN
+F1 "iwasz-kicad_usb-micro" 50 0 60 H V C CNN
 F2 "" 50 0 60 H V C CNN
 F3 "" 50 0 60 H V C CNN
 DRAW
@@ -563,11 +564,11 @@ X GND 5 -600 -250 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# power:+12V
+# power_+12V
 #
-DEF power:+12V #PWR 0 0 Y Y 1 F P
+DEF power_+12V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+12V" 0 140 50 H V C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -578,11 +579,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# power_+3.3V
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -594,11 +595,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -609,11 +610,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

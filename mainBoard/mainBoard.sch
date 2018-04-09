@@ -1028,24 +1028,20 @@ F 3 "" H 10425 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10425 5250 10525 5250
-Text Label 9850 4750 2    50   ~ 0
-swdio
 Text Label 9850 4950 2    50   ~ 0
+swdio
+Text Label 9850 4750 2    50   ~ 0
 swdclk
-Text Label 10475 5050 2    50   ~ 0
-consoleRx
 Text Label 10475 5150 2    50   ~ 0
+consoleRx
+Text Label 10475 5050 2    50   ~ 0
 consoleTx
 Text Label 7925 3050 0    50   ~ 0
 swdio
 Text Label 7425 2150 1    50   ~ 0
 swdclk
 Text Label 6100 1475 1    50   ~ 0
-consoleTx
-Text Notes 10800 5075 0    50   ~ 0
-consoleRx should be connected to terminal's RX
-Text Notes 10800 5175 0    50   ~ 0
-consoleTx should be connected to terminal's TX
+consoleRx
 $Comp
 L iwasz-kicad:SMF05C U2
 U 1 1 5A7CB17C
@@ -1053,7 +1049,7 @@ P 9450 3875
 F 0 "U2" H 9400 3750 60  0000 L CNN
 F 1 "SMF05C / MMQA5V6T3G" V 9125 3050 60  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 9450 3875 60  0001 C CNN
-F 3 "http://pl.farnell.com/on-semiconductor/mmqa5v6t1g/diode-tvs-uni-5-6v-sc-74/dp/1459113?st=mmqa5v6" H 9450 3875 60  0000 C CNN
+F 3 "http://pl.farnell.com/on-semiconductor/mmqa5v6t1g/diode-tvs-uni-5-6v-sc-74/dp/1459113?st=mmqa5v6" H 9450 3875 60  0001 C CNN
 	1    9450 3875
 	1    0    0    -1  
 $EndComp
@@ -1187,7 +1183,7 @@ L Jumper:SolderJumper_2_Open JP4
 U 1 1 5A7D555A
 P 6100 1625
 F 0 "JP4" V 6025 1500 50  0000 L CNN
-F 1 "consoleTx" H 6100 1675 50  0000 L CNN
+F 1 "consoleRx" H 6100 1675 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6100 1625 50  0001 C CNN
 F 3 "~" H 6100 1625 50  0001 C CNN
 	1    6100 1625
@@ -1200,13 +1196,13 @@ Wire Wire Line
 Wire Wire Line
 	6100 2000 6100 1775
 Text Label 6275 1475 1    50   ~ 0
-consoleRx
+consoleTx
 $Comp
 L Jumper:SolderJumper_2_Open JP6
 U 1 1 5A7E9935
 P 6275 1625
 F 0 "JP6" V 6200 1500 50  0000 L CNN
-F 1 "consoleRx" H 6275 1675 50  0000 L CNN
+F 1 "consoleTx" H 6275 1675 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6275 1625 50  0001 C CNN
 F 3 "~" H 6275 1625 50  0001 C CNN
 	1    6275 1625
@@ -2047,4 +2043,6 @@ Wire Wire Line
 	1200 5575 1250 5575
 Wire Wire Line
 	1200 5475 1250 5475
+Text Notes 9500 4425 0    50   ~ 0
+zły footprint
 $EndSCHEMATC

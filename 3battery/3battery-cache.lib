@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x02
+# Connector_Generic_Conn_01x02
 #
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -20,11 +20,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Specialized:Barrel_Jack
+# Connector_Specialized_Barrel_Jack
 #
-DEF Connector_Specialized:Barrel_Jack J 0 40 Y Y 1 F N
+DEF Connector_Specialized_Barrel_Jack J 0 40 Y Y 1 F N
 F0 "J" 0 210 50 H V C CNN
-F1 "Connector_Specialized:Barrel_Jack" 0 -175 50 H V C CNN
+F1 "Connector_Specialized_Barrel_Jack" 0 -175 50 H V C CNN
 F2 "" 50 -40 50 H I C CNN
 F3 "" 50 -40 50 H I C CNN
 ALIAS Jack-DC
@@ -46,11 +46,11 @@ X ~ 3 300 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Battery_Cell
+# Device_Battery_Cell
 #
-DEF Device:Battery_Cell BT 0 0 N N 1 F N
+DEF Device_Battery_Cell BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "Device:Battery_Cell" 100 0 50 H V L CNN
+F1 "Device_Battery_Cell" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -65,15 +65,15 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- C_*
+ *:C_*
 $ENDFPLIST
 DRAW
 P 2 0 1 20 -80 -30 80 -30 N
@@ -83,11 +83,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D_Schottky
+# Device_D_Schottky
 #
-DEF Device:D_Schottky D 0 40 N N 1 F N
+DEF Device_D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D_Schottky" 0 -100 50 H V C CNN
+F1 "Device_D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -95,7 +95,7 @@ $FPLIST
  *SingleDiode
  *_Diode_*
  *SingleDiode*
- D_*
+ *:D_*
 $ENDFPLIST
 DRAW
 P 2 0 1 0 50 0 -50 0 N
@@ -106,15 +106,17 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 Y N 1 F N
+DEF Device_LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  LED*
+ LED_SMD:*
+ LED_THT:*
 $ENDFPLIST
 DRAW
 P 2 0 1 8 -50 -50 -50 50 N
@@ -127,11 +129,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_NMOS_DGS
+# Device_Q_NMOS_DGS
 #
-DEF Device:Q_NMOS_DGS Q 0 0 Y N 1 F N
+DEF Device_Q_NMOS_DGS Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_NMOS_DGS" 200 -50 50 H V L CNN
+F1 "Device_Q_NMOS_DGS" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -159,11 +161,11 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_PMOS_DGS
+# Device_Q_PMOS_DGS
 #
-DEF Device:Q_PMOS_DGS Q 0 0 Y N 1 F N
+DEF Device_Q_PMOS_DGS Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_PMOS_DGS" 200 -50 50 H V L CNN
+F1 "Device_Q_PMOS_DGS" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -191,16 +193,15 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
- R_*
+ *:R_*
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
@@ -209,15 +210,15 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Thermistor
+# Device_Thermistor
 #
-DEF Device:Thermistor TH 0 0 N Y 1 F N
+DEF Device_Thermistor TH 0 0 N Y 1 F N
 F0 "TH" 100 50 50 V V C CNN
-F1 "Device:Thermistor" -100 0 50 V V C BNN
+F1 "Device_Thermistor" -100 0 50 V V C BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
+ *:R_*
  SM0603
  SM0805
 $ENDFPLIST
@@ -229,12 +230,12 @@ X ~ 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Regulator_Switching:TPS62143
+# Regulator_Switching_TPS62143
 #
-DEF Regulator_Switching:TPS62143 U 0 10 Y Y 1 F N
+DEF Regulator_Switching_TPS62143 U 0 10 Y Y 1 F N
 F0 "U" 150 550 50 H V L CNN
-F1 "Regulator_Switching:TPS62143" 150 450 50 H V L CNN
-F2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm" 150 -450 50 H I L CNN
+F1 "Regulator_Switching_TPS62143" 150 450 50 H V L CNN
+F2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" 150 -450 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS TPS62130A TPS62131 TPS62132 TPS62133 TPS62150 TPS62150A TPS62151 TPS62152 TPS62153 TPS62140 TPS62140A TPS62141 TPS62142 TPS62143
 $FPLIST
@@ -262,11 +263,11 @@ X SS/TR 9 -400 100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Switch:SW_SPDT
+# Switch_SW_SPDT
 #
-DEF Switch:SW_SPDT SW 0 0 Y N 1 F N
+DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
 F0 "SW" 0 170 50 H V C CNN
-F1 "Switch:SW_SPDT" 0 -200 50 H V C CNN
+F1 "Switch_SW_SPDT" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -280,11 +281,11 @@ X C 3 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# iwasz-kicad:bq24133
+# iwasz-kicad_bq24133
 #
-DEF iwasz-kicad:bq24133 U 0 40 Y Y 1 F N
+DEF iwasz-kicad_bq24133 U 0 40 Y Y 1 F N
 F0 "U" 0 -600 50 H V C CNN
-F1 "iwasz-kicad:bq24133" 0 -850 50 V V C CNN
+F1 "iwasz-kicad_bq24133" 0 -850 50 V V C CNN
 F2 "" 50 -600 50 H I C CNN
 F3 "" 50 -600 50 H I C CNN
 DRAW
@@ -317,11 +318,11 @@ X STAT 9 -550 -600 100 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# iwasz-kicad:uniwersal-board2
+# iwasz-kicad_uniwersal-board2
 #
-DEF iwasz-kicad:uniwersal-board2 J 0 40 Y N 1 F N
+DEF iwasz-kicad_uniwersal-board2 J 0 40 Y N 1 F N
 F0 "J" -550 1350 50 H V C CNN
-F1 "iwasz-kicad:uniwersal-board2" -550 -1250 50 H V C CNN
+F1 "iwasz-kicad_uniwersal-board2" -550 -1250 50 H V C CNN
 F2 "" -600 50 50 H I C CNN
 F3 "" -600 50 50 H I C CNN
 $FPLIST
@@ -539,11 +540,11 @@ X Pin_29 99 150 -1300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:+12V
+# power_+12V
 #
-DEF power:+12V #PWR 0 0 Y Y 1 F P
+DEF power_+12V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+12V" 0 140 50 H V C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -554,11 +555,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+15V
+# power_+15V
 #
-DEF power:+15V #PWR 0 0 Y Y 1 F P
+DEF power_+15V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+15V" 0 140 50 H V C CNN
+F1 "power_+15V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -569,11 +570,11 @@ X +15V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -584,11 +585,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+BATT
+# power_+BATT
 #
-DEF power:+BATT #PWR 0 0 Y Y 1 F P
+DEF power_+BATT #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+BATT" 0 140 50 H V C CNN
+F1 "power_+BATT" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -599,11 +600,11 @@ X +BATT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -612,11 +613,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GNDD
+# power_GNDD
 #
-DEF power:GNDD #PWR 0 0 Y Y 1 F P
+DEF power_GNDD #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GNDD" 0 -125 50 H V C CNN
+F1 "power_GNDD" 0 -125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -626,11 +627,11 @@ X GNDD 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pspice:INDUCTOR
+# pspice_INDUCTOR
 #
-DEF pspice:INDUCTOR L 0 0 N Y 1 F N
+DEF pspice_INDUCTOR L 0 0 N Y 1 F N
 F0 "L" 0 100 50 H V C CNN
-F1 "pspice:INDUCTOR" 0 -50 50 H V C CNN
+F1 "pspice_INDUCTOR" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
